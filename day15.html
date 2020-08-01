@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.12.3, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.12.3, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/tt-logo-final-big-144x53.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Day 15</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+  <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
+ .codebox {
+        /* Below are styles for the codebox (not the code itself) */
+        border:1px solid black;
+        background-color:#EEEEFF;
+        width:300px;
+        overflow:auto;    
+        padding:10px;
+    }
+    .codebox code {
+        /* Styles in here affect the text of the codebox */
+        font-size:0.9em;
+        /* You could also put all sorts of styling here, like different font, color, underline, etc. for the code. */
+    }
+    
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="https://www.technotriumph.in/" target="_blank">
+                         <img src="assets/images/tt-logo-final-big-144x53.png" alt="Mobirise" title="" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-danger display-4" href="https://www.technotriumph.in/" target="_blank"><span class="mbri-extension mbr-iconfont mbr-iconfont-btn" style="color: rgb(247, 237, 74);"></span>Learn Blockchain</a></span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            
+        </div>
+    </nav>
+</section>
+
+<section class="engine"><a href="https://mobirise.info/x">free css templates</a></section><section class="mbr-section content5 cid-rYi3TrSSFH" id="content5-9">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1">
+                    <br>BLOCKCHAIN INTERNSHIP</h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-7"><strong><em>Day 15</em></strong></h3>
+                <p class="mbr-text align-center mbr-white pb-3 mbr-fonts-style display-5"><em>Learn the art of learning</em></p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-s2ki6gKe8q" id="content4-2z">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2"><em><strong>
+                    <br>Blockchain Application</strong></em><br><em>(Part-2)</em><br></h2>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section article content1 cid-s2khPKwZtQ" id="content1-2y">
+    
+     
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-10"><strong><em>II. Building the Cryptocurrency
+</em></strong><p></p><p></p><div>In this section, we’re going to be putting all the necessary pieces of our cryptocurrency. We’ll create a cryptocurrency called Sudocoin, add transactions to our blocks and allow other nodes to connect to our network. Each node will be running an instance of our blockchain, we will also want to synchronize our blockchain across all the nodes connected to our network.
+</div><div>Edit views.py and add the new code:</div><div><br></div><div><a href="views.html">View.py</a></div><div><br></div><div>Edit urls.py to configure our new API URL endpoints</div><div><br></div><div><a href="urls.html">urls.py</a></div><div><br></div><div>Now that we’ve added all the necessary cryptocurrency logic, open two or more terminals — make sure venv is activated first then runserver from different ports like so</div><div><br></div><div><img src = "ub2.png" style="width:600px;height:400px;"></div><div><br></div><div>Each one of these servers represents a node that’s running an instance of our blockchain’s code</div><div><br></div><div>Now go to postman and send GET requests to each one of these nodes separately to mine for blocks, each node will have a different chain length than the other so we need to make sure that our blockchain’s state is synchronized across all nodes and that is achieved using the consensus mechanism we implemented in our replace_chain method that replaces any node’s current chain with the longest-running node’s chain among all of the nodes connected to our network.
+</div><div><br></div><div>We need our current node to discover the other running nodes, we’ll do so by sending a POST request to the endpoint /connect_node — we’ll send a JSON object the contains the other node(s) in our POST request to the current running node we’re communicating with like so:</div><div><br></div><div><img src = "p5.png" style="width:850px;height:250px;"></div><div><br></div><div>After sending the request you should get the response seen on the right. Do the same for the other node(s) running. Now that nodes are aware of each other, mine for blocks on every node and then try /replace_chain to make sure that our node is in sync with the blockchain’s latest state or to get the latest state of our blockchain from the node that has the longest-running chain.
+</div><div>I know that for now, it seems like we’re doing all the work for our blockchain, in a real-world example — everything should be done in an autonomous and seamless way , this is why in the next and last part of this tutorial we’ll build a ReactJS front-end interface that’ll make our interactions with the network a lot easier.</div><div><br></div><div>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; .</div><div>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; .</div><div><br></div><div><strong><em>III. Build a user interface with ReactJS
+</em></strong></div><div><br></div><div>Getting started
+</div><div>Before we start building our front-end interface there are a few things we need to do. First, we need to set up our frontend within our project directory and install all the necessary dependencies. Then, we need to run our node server and then tell django where to communicate with our frontend server.
+</div><div>We’ll use create-react-app to build our front-end, it’ll save us the hassle to install and configure our react app.
+</div><div>Open a new terminal, make sure you have npm installed (You can use yarn alternatively) then run this command</div><div><br></div><div><code>&nbsp;$ npm install create-react-app</code></div><div><br></div><div>After it installs successfully, let's go to our project directory and create our frontend app:</div><div><br></div><div><code>&nbsp;$ create-react-app frontend&nbsp;</code></div><div><br></div><div>It’s going to take a few minutes to setup our react app. After it’s finished navigate to our frontend directory and the following commands:</div><div><br></div><div><code>$ cd frontend</code>
+</div><div><code>$ npm start</code></div><div><br></div><div>A new web tab should open and tell us that our react app is up and running.
+</div><div>Now let's install our frontend dependencies, run the following command:</div><div><br></div><div><code>$ npm install axios react-bootstrap bootstrap font-awesome --save</code></div><div><br></div><div>We’ll use Axios to send get &amp; post requests to our API but before we do that we need to establish a connection between the frontend and backend servers
+</div><div>To do this add the following lines at the end of settings.py:</div><div><br></div><div><code>CORS_ORIGIN_ALLOW_ALL = True</code>
+</div><div><code>CORS_ALLOW_CREDENTIALS = True</code></div><div><br></div><div>Then add this line to our package.json file:</div><div><br></div><div><img src = "p6.png" style="width:600px;height:400px;"></div><div><br></div><div>Finally, add this line to our header tag in public/index.html</div><div><br></div><div><code>&lt;link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=”sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T” crossorigin=”anonymous”/&gt;</code></div><div><br></div><div>Now that we’re good to go, our frontend will be broken down into three components status, send &amp; transactions from top to bottom.
+</div><div>Create a components folder inside src
+</div><div>Create the following files in /src/components and add the following code:
+</div><div><strong><em>status.js</em></strong></div><div><br></div><div><a href="status.html">Status.js</a></div><div><br></div><div><em><strong>send.js</strong></em></div><div><em><strong><br></strong></em></div><div><a href="send.html">send.js</a></div><div><br></div><div><strong><em>transactions.js</em></strong></div><div><strong><em><br></em></strong></div><div><a href="trans.html">transaction.js</a></div><div><br></div><div>Now let's glow our components together in App.js</div><div><br></div><div><a href="app.html">app.js</a></div><div><br></div><div>At last let's start our servers and start interacting with our application, runserver from django’s terminal and npm start from our frontend terminal.
+</div><div><br></div><div>Our application is very simple for now and has many limitations for the sake of making this tutorial as simple as possible. Get comfortable around the code and when you feel like you’ve grasped all the technical aspects of blockchains &amp; cryptocurrencies, play around with the code &amp; think about ways you can overcome these limitations to scale this application up and take it to the next level.
+</div><div><br></div><div>Congratulations you’ve made it all the way to the end .</div><div><br><a href="https://github.com/internshiptt22/pychain">Download Code</a></div><a href="congrats.html">Continue</a><div><br></div></div>
+        </div>
+    </div>
+</section>
+
+
+<div class="scrollmenu">
+   
+    <a href="index.html">Day 1</a>
+    <a href="day2.html">Day 2</a>
+    <a href="day3.html">Day 3</a>
+    <a href="day4.html">Day 4</a>
+    <a href="day5.html">Day 5</a>
+    <a href="day6.html">Day 6</a>
+    <a href="day7.html">Day 7</a>
+    <a href="day8.html">Day 8</a>
+    <a href="day9.html">Day 9</a>
+    <a href="day10.html">Day 10</a>
+    <a href="day11.html">Day 11</a>
+    <a href="day12.html">Day 12</a>
+    <a href="day13.html">Day 13</a>
+    <a href="day14.html">Day 14</a>
+    <a href="day15.html">Day 15</a>
+    
+ 
+    
+  </div>
+
+<section class="cid-qTkAaeaxX5" id="footer1-2">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row content text-white">
+            <div class="col-12 col-md-3">
+                <div class="media-wrap">
+                    <a href="https://www.technotriumph.in/" target="_blank">
+                        <img src="assets/images/tt-logo-final-big-192x71.png" alt="Mobirise" title="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-4">
+                <h5 class="pb-3">
+                    Address
+                </h5>
+                <p class="mbr-text"><em>TechnoTriumph IT Innovative Solution LLP,<br>Kodikeri, Kulai Surthakal
+<br>Karnataka,India</em></p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-4">
+                <h5 class="pb-3">
+                    Contacts
+                </h5>
+                <p class="mbr-text"><em>Email: contact@technotriumph.in/     triumph123group@gmail.com         
+<br>Phone: +91 7019582399&nbsp;</em></p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3"></h5>
+                <p class="mbr-text"></p>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-sm-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="media-container-row mbr-white">
+                <div class="col-sm-6 copyright">
+                    <p class="mbr-text mbr-fonts-style display-4">
+                        © Copyright 2020 - All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/dropdown/js/nav-dropdown.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+  
+  
+</body>
+</html>
